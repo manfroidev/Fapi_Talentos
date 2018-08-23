@@ -1,0 +1,124 @@
+/*
+*
+* @autor {T. A. D. S. - 1º Período}
+*@version 0.1
+*/
+/************************* Inicio Tela Login *************************/
+
+html, body, .capa{
+    height: 100%;
+    overflow: auto;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.login1{
+    margin-left: -79%;
+}
+
+.login{
+    width: 25%;
+    height: 30%;
+    background: #fff;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.cadastrar{
+    width: 55%;
+    height: 30%;
+    background: #fff;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.ip{
+    color:#000;
+    font-weight: bold;
+}
+
+.alterarSenha{
+    margin-left: 40px;
+    color: #000;
+    font-size: 12px;
+}
+
+.cadastre-se{
+    color: #000;
+    font-size: 12px;
+}
+
+.acessar, .cadastrar{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-check-label{
+    font-size: 13.4px;
+}
+
+.imagem{
+    width: 400px;
+    height: 200px;
+}
+
+/************************* Fim Tela Login *************************/
+/************************* Inicio Cabeçalho *************************/
+.cabecalho-container{
+    background-color: #E6E6E6;
+    height: 110px;
+}
+
+.menus-container{
+    background-color: #EB282D;
+    height: 55px;
+    margin-top: 0px;
+    padding-top: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: #6F6C6C;
+    font-weight: bold
+}
+a:hover{
+    text-decoration: none;
+    color:  black;
+}
+/************************* Fim Cabeçalho *************************/
+
+/************************* Inicio Rodape *************************/
+.footer{
+    background-color: #EB282D;
+    height: 90px;
+    padding-top: 8px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    bottom:0;
+}
+/************************* Fim Rodape *************************/
+/************************* Inicio da Home *******************************/
+.nomeVaga, .nomeAssunto{
+    text-align: left;
+    font-weight: bold;
+}
+
+.card-body{
+    height: auto;
+    font-size: 15px;
+}
+
+.vaga, .assunto{
+    overflow-y: auto;
+    height: 275px;
+}
+
+.ass, .vag{
+    text-align: left;
+}
+
+.data{
+   text-align: right;
+}
+/************************* fim da Home **********************************/
