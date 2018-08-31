@@ -1,4 +1,4 @@
-<?php include './controles/sessaoValida.php' ?>
+﻿<?php include './controles/sessaoValida.php' ?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -16,7 +16,7 @@
 
         <script>
             $('.carousel').carousel({
-            interval: 500;
+            interval: 500
             }
             )
         </script>
@@ -27,7 +27,7 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body onload=popup()>
+    <body onload="popup()">
 
         <!-- Cabecalho -->
         <div class="row cabecalho-container">
