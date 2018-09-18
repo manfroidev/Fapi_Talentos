@@ -87,6 +87,7 @@ if ($row_usu_info['usuario_perfil'] == 1) {
     echo "<a href=\"cadastrarCurso.php\" class=\"menu-formatacao\"><span class=\"fas fa-graduation-cap\" aria-hidden=\"true\" ></span><span> Cadastrar Curso &nbsp;</span></a>";
     echo "<a href=\"objetivos.php\" class=\"menu-formatacao\"><span class=\"fas fa-graduation-cap\" aria-hidden=\"true\" ></span><span> Cadastrar Objetivo &nbsp;</span></a>";
     echo "<a href=\"cadastroempresa.php\" class=\"menu-formatacao\"><span class=\"fas fa-graduation-cap\" aria-hidden=\"true\" ></span><span> Cadastrar Empresa &nbsp;</span></a>";
+    echo "<a href=\"curriculum.php\" class=\"menu-formatacao\"><span class=\"fas fa-graduation-cap\" aria-hidden=\"true\" ></span><span> Imprimir curriculum &nbsp;</span></a>";
     echo "</div>";
     echo "</div>";
     echo "</div>";
