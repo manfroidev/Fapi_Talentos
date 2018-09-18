@@ -68,7 +68,7 @@
 		 <div class = "col-sm-5">
 			<b>Objetivo Profissional:<br>
 			</br>
-                <textarea class="form-control mt-2" cols="35" rows="3" name="msg" placeholder="Outros tipos de deficiencias " maxlength="150"></textarea><br>
+                <textarea class="form-control mt-2" cols="35" rows="3" name="msg" placeholder="Informe seus objetivos profissionais " maxlength="150"></textarea><br>
 			</br>
 			<input type="submit" value="Cadastrar" class="form-control mt-2, btn-outline-success"><br>
 		</form>
