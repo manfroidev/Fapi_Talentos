@@ -66,9 +66,9 @@
 		<form action = "" method ="POST">
 		</br>
 		 <div class = "col-sm-5">
-			<b>Objetivo:<br>
+			<b>Objetivo Profissional:<br>
 			</br>
-			<input type="text" class="form-control form-control mt-2" id="curso" placeholder="Objetivo" name="curso">
+                <textarea class="form-control mt-2" cols="35" rows="3" name="msg" placeholder="Outros tipos de deficiencias " maxlength="150"></textarea><br>
 			</br>
 			<input type="submit" value="Cadastrar" class="form-control mt-2, btn-outline-success"><br>
 		</form>

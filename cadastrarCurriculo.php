@@ -72,8 +72,8 @@
             <input class="form-control mt-2" type="text" name = "nome"><br>
 
             <b>Gênero:</b><br>
-            <input type="radio" name = "genero" class="for-control mt-2">Masculino &nbsp&nbsp&nbsp&nbsp
-            <input type="radio" name = "genero" class="for-control mt-2">Feminino<br><br>
+            <label><input type="radio" name = "genero" class="for-control mt-2"> Masculino</label> &nbsp&nbsp&nbsp&nbsp
+            <label><input type="radio" name = "genero" class="for-control mt-2"> Feminino</label><br><br>
 
             <b>Data de nacimento :</b>
             <input class="form-control mt-2" type="text" name = "data_nacimento"><br>
@@ -91,11 +91,12 @@
             <input class="form-control mt-2" type="text" name = "telefoneSecundario"><br>
 
             <b>Estado Civil:</b><br>
-            <input type="radio" name = "estadocivil" class="for-control mt-2">Solteiro(a) &nbsp&nbsp&nbsp&nbsp
-            <input type="radio" name = "estadocivil" class="for-control mt-2">Casado(a)&nbsp&nbsp&nbsp&nbsp
-            <input type="radio" name = "estadocivil" class="for-control mt-2">Viúvo(a)&nbsp&nbsp&nbsp&nbsp<br>
-            <input type="radio" name = "estadocivil" class="for-control mt-2">Separado(a)&nbsp&nbsp
-            <input type="radio" name = "estadocivil" class="for-control mt-2">Divorciado(a)<br><br>
+
+            <label><input type="radio" name = "estadocivil" class="for-control mt-2"> Solteiro(a) </label>&nbsp&nbsp&nbsp&nbsp
+            <label><input type="radio" name = "estadocivil" class="for-control mt-2"> Casado(a) </label><br>
+            <label><input type="radio" name = "estadocivil" class="for-control mt-2"> Separado(a) </label>&nbsp&nbsp&nbsp&nbsp
+            <label><input type="radio" name = "estadocivil" class="for-control mt-2"> Divorciado(a) </label>&nbsp&nbsp&nbsp&nbsp<br>
+            <label><input type="radio" name = "estadocivil" class="for-control mt-2"> Viúvo(a) </label>&nbsp&nbsp&nbsp&nbsp<br><br>
 
             <b>Endereço:</b>
 
@@ -125,8 +126,18 @@
             <input placeholder="LINKEDIN" class="form-control mt-2" type="text" name = "linkedin"><br>
 
             <b>Possui Deficiências:</b><br>
-
-            <textarea class="form-control mt-2" cols="35" rows="3" name="msg"></textarea><br>
+                <select id="cliente" onchange="optionCheck()" class="form-control mt-2">
+                    <option value="cliente">POSSUI DEFICIENCIA</option>
+                    <option value="sim">SIM</option>
+                    <option value="nao">NÃO</option>
+                </select><br><BR>
+                <div id="codigo" style="display: none;" class="form-control mt-2" >
+                   <label><input type="checkbox" name="auditivo">ADUTITIVO</label>
+                    <label><input type="checkbox" name="visual">  VISUAL</label> <br><br>
+                    <label><input type="checkbox" name="motora">  MOTORA</label>
+                    <label><input type="checkbox" name="outro" id="outro">   OUTROS </label><br>
+                    <textarea class="form-control mt-2" cols="35" rows="3" name="msg" placeholder="Outros tipos de deficiencias "></textarea><br>
+                </div>
 
             <b>Usuário:</b>
             <input class="form-control mt-2" type="text" name = "usuario"><br>
@@ -140,7 +151,7 @@
             <input type="submit" value="Salvar" class="form-control mt-2, btn-outline-success"><br>
             <input type="submit" value="Cancelar" class="form-control mt-2, btn-outline-danger"><br>
 
-
+        </div>
         </div>
 
         </div>
@@ -149,10 +160,10 @@
 		
 		
 		</center>
-		
-		
-		
-		
+
+
+
+
 		
 		
 		
@@ -174,5 +185,19 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+
+        <script type="text/javascript">
+            function optionCheck(){
+                var option = document.getElementById("cliente").value;
+                if(option == "sim"){
+                    document.getElementById("codigo").style.display ="block";
+                }
+
+
+            }
+        </script>
+
+
     </body>
 </html>
